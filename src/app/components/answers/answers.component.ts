@@ -23,7 +23,7 @@ export class AnswersComponent implements OnInit {
         model.language = x.language;
         model.message = x.message[0].children[0].text;
         return model;
-      });
+      }).filter((v: TelegramModel) => v.public);
       this.totalCount = v['meta'].pagination.total;
       console.log(this.totalCount);
     })
