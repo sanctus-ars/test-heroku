@@ -33,9 +33,15 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/app/assets",
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/assets",
+                "output": "/assets"
               }
             ],
             "styles": [
@@ -64,9 +70,15 @@
                 }
               ],
               "assets": [
+                "src/app/assets",
                 {
                   "glob": "**/*",
                   "input": "public"
+                },
+                {
+                  "glob": "**/*",
+                  "input": "src/app/assets",
+                  "output": "/assets"
                 }
               ],
               "outputHashing": "all"
@@ -76,9 +88,15 @@
               "extractLicenses": false,
               "sourceMap": true,
               "assets": [
+                "src/app/assets",
                 {
                   "glob": "**/*",
                   "input": "public"
+                },
+                {
+                  "glob": "**/*",
+                  "input": "src/app/assets",
+                  "output": "/assets"
                 }
               ]
             }
@@ -111,9 +129,15 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/app/assets",
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/assets",
+                "output": "/assets"
               }
             ],
             "styles": [

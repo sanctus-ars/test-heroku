@@ -9,6 +9,7 @@ import {TelegramModel} from '../../shared/models/telegram.model';
 })
 export class CounterComponent implements OnInit {
   @Input() count: number = 0;
+  imgSrc = './assets/img/bg.jpg'
   list: TelegramModel[] = [];
   constructor(
     public silenseService: SilenceService
