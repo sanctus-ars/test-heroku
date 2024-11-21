@@ -1,0 +1,111 @@
+.content {
+  max-width: 750px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content app-counter {
+  align-self: flex-end;
+}
+.content form {
+  width: 100%;
+}
+.container {
+  margin: 20px 0;
+}
+.text textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  max-width: 750px;
+  resize: none;
+  font-size: 12px;
+  border: 2px solid #252525;
+  border-radius: 30px;
+  min-height: 300px;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Roboto Light", sans-serif;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.button button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.button button {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid #252525;
+  background-color: #252525;
+  color: white;
+  font-family: "Roboto Light", sans-serif;
+  text-transform: uppercase;
+}
+.button button:hover {
+  color: #252525;
+  border: 2px solid orange;
+  background-color: orange;
+}
+.popup {
+  padding: 20px;
+  background-color: #252525;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  top: -100px;
+  right: 30px;
+}
+.popup.show {
+  display: flex;
+}
+
+.popup:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  border-top: 10px solid #171717;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #171717;
+  -webkit-transform: rotate(90deg) translateX(60%);
+  -ms-transform: rotate(90deg) translateX(60%);
+  transform: rotate(90deg) translateX(60%);
+}
+
+.popup_answer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.popup_answer-item {
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.popup_answer-item:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+}

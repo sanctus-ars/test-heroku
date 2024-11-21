@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="content">
+    <app-counter *ngIf="list.length !== 0" [count]="totalCount"></app-counter>
+    <div class="list">
+      <ng-container *ngFor="let telegram of list">
+        <div class="item">
+          {{ telegram.message }}
+        </div>
+      </ng-container>
+      <ng-container *ngIf="list.length === 0">
+        {{ 'answers.404' | translate  }}
+      </ng-container>
+    </div>
+  </div>
+</div>

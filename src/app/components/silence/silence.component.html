@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="content">
+    <app-counter [count]="totalCount"></app-counter>
+    <form [formGroup]="silenceForm" (ngSubmit)="showPopupAction()">
+      <div class="emotional">
+
+      </div>
+      <div class="text">
+        <textarea [formControl]="textAreaControl"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit" (click)="showPopupAction()" [disabled]="showPopup">
+          {{ 'silence.say' | translate }}
+        </button>
+
+        <ng-container [ngTemplateOutlet]="publishPopup" />
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+<ng-template #publishPopup>
+  <div class="popup" [ngClass]="showPopup ? 'show' : ''">
+    <div class="popup_title">
+      {{ 'silence.question' | translate }}
+    </div>
+    <div class="popup_answer">
+      <div class="popup_answer-item" (click)="submitAction(true)">
+        {{ 'silence.question_yes' | translate }}
+      </div>
+      <div class="popup_answer-item" (click)="submitAction(false)">
+        {{ 'silence.question_no' | translate }}
+      </div>
+    </div>
+  </div>
+</ng-template>
+

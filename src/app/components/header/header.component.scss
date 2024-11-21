@@ -1,0 +1,36 @@
+.container {
+  min-height: 30px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 750px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-content: center;
+
+  .item {
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    font-size: 10px;
+  }
+  .item.active,
+  .item:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="content">
+    <div class="languages">
+      <div class="item"
+           [ngClass]="currentLang === languagesEnum.UA ? 'active' : ''"
+      >
+        <a  (click)="changeLanguageAction(languagesEnum.UA)">UA</a>
+      </div>
+      <div class="item"
+           [ngClass]="currentLang === languagesEnum.BY ? 'active' : ''"
+        >
+        <a  (click)="changeLanguageAction(languagesEnum.BY)">BY</a>
+      </div>
+      <div class="item"
+           [ngClass]="currentLang === languagesEnum.EN ? 'active' : ''"
+      >
+        <a  (click)="changeLanguageAction(languagesEnum.EN)">EN</a>
+      </div>
+      <div class="item"
+           [ngClass]="currentLang === languagesEnum.RU ? 'active' : ''">
+        <a  (click)="changeLanguageAction(languagesEnum.RU)">RU</a>
+      </div>
+    </div>
+  </div>
+</div>
