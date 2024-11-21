@@ -35,3 +35,9 @@
   margin: 0 auto;
   display: flex;
 }
+
+@media screen and (max-width: 760px){
+  .content {
+    padding: 0;
+  }
+}
