@@ -17,6 +17,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {SilenceComponent} from './components/silence/silence.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { CounterComponent } from './components/counter/counter.component';
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -31,18 +32,19 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     CounterComponent
   ],
-  imports: [
-    BrowserModule,
-    TranslatePipe,
-    HttpClientModule,
-    TranslateDirective,
-    TranslateModule.forRoot({
-      defaultLanguage: 'ua',
-      useDefaultLang: true,
-    }),
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+    imports: [
+        BrowserModule,
+        TranslatePipe,
+        HttpClientModule,
+        TranslateDirective,
+        TranslateModule.forRoot({
+            defaultLanguage: 'ua',
+            useDefaultLang: true,
+        }),
+        AppRoutingModule,
+        ReactiveFormsModule,
+        FaIconComponent
+    ],
   providers: [
     TranslateService
   ],

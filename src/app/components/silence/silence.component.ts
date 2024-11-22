@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {SilenceService} from '../../services/silence.service';
 import {TelegramModel} from '../../shared/models/telegram.model';
 import {TranslateService} from '@ngx-translate/core';
+import { faTrash, faBookSkull } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-silence',
@@ -10,6 +11,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrl: './silence.component.scss'
 })
 export class SilenceComponent implements OnInit {
+  public faTrash = faBookSkull;
   public textAreaControl =  new FormControl<string>('', { validators: [Validators.required] });
   public showPopup: boolean = false;
   public totalCount: number = 0;

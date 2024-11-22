@@ -1,10 +1,10 @@
 {
-  "navigation.silence": "Несказанное",
-  "navigation.answers": "Сказанное",
-  "silence.say": "Сказать",
+  "navigation.silence": "Уничтожить",
+  "navigation.answers": "Уничтоженное",
+  "silence.say": "Уничтожить",
   "answers.404": "Можно слушать музыку",
   "silence.question": "Опубликовать сказанное?",
   "silence.question_yes": "Да",
-  "silence.question_no": "Нет, просто сказать",
+  "silence.question_no": "Нет, просто удали это",
   "counter.universe": "сообщений<br/>отправленных<br/>во вселенную"
 }

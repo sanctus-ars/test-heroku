@@ -11,6 +11,7 @@
       <div class="button">
         <button type="submit" (click)="showPopupAction()" [disabled]="showPopup">
           {{ 'silence.say' | translate }}
+          <fa-icon [icon]="faTrash"></fa-icon>
         </button>
 
         <ng-container [ngTemplateOutlet]="publishPopup" />
